@@ -1,0 +1,84 @@
+.card{
+    width: 340px;
+    height: 290px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background-secondary-color);
+    
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--hover-color);
+    }
+
+    &--facebook{
+        border-top: solid 5px#238CE1;
+    }
+
+    &--twitter{
+        border-top: solid 5px #16A3F5;
+    }
+
+    &--instagram{
+        border-top: solid 5px;
+        border-image: 
+            linear-gradient(
+                to right,
+                #F1C27D, 
+                #BD5386
+            )100;
+    }
+
+    &--youtube{
+        border-top: solid 5px #BC042A;
+    }
+
+    &__pseudo{
+        display: flex;
+        margin-bottom: 15px;
+        color: var(--font-primary-color);
+
+        img{
+            margin-right: 12px;
+        }
+    }
+
+    &__number{
+        font-size: 78px;
+        color: var(--font-primary-color);
+    }
+
+    &__followers{
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 9px;
+
+        margin-bottom: 14px;
+
+        color: var(--font-secondary-color);
+    }
+
+    &__update{
+        display: flex;
+        align-items: center;
+
+        img{
+            margin-right: 8px;
+        }
+
+        p{
+            color:#45A98F;
+        }
+    }
+
+
+}

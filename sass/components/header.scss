@@ -1,0 +1,19 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom:  59px;
+
+    &__title{
+        font-size: 38px;
+        font-weight: 600;
+        color: var(--font-primary-color);
+    }
+
+    &__subtitle{
+        font-size: 19px;
+        font-weight: 400;
+        color: var(--font-secondary-color);
+    }
+}

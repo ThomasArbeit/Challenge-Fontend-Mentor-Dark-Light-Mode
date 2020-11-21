@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+.white {
+  --background-color: white;
+  --background-secondary-color: #F0F3FA;
+  --hover-color: #E1E3F0;
+  --font-primary-color: black;
+  --font-secondary-color: #6A6C79;
+  --switcher-bg-color: #AEB2CD;
+  --switcher-button-position: flex-end;
+}
+
+.dark {
+  --background-color: #20222F;
+  --background-secondary-color: #252B43;
+  --hover-color: #333A56;
+  --font-primary-color: white;
+  --font-secondary-color: #989FBA;
+  --switcher-bg-color: linear-gradient(to right, #3A9CD8, #55C793);
+  --switcher-button-position: flex-start;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--font-secondary-color);
+}
+
+.structure {
+  width: 1480px;
+  padding-top: 47px;
+  margin: 0 20px;
+}
+
+.followers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 59px;
+}
+.header__title {
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--font-primary-color);
+}
+.header__subtitle {
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--font-secondary-color);
+}
+
+.switcher {
+  display: flex;
+  align-items: center;
+}
+.switcher__text {
+  margin-right: 20px;
+  color: #ACB0CB;
+}
+.switcher__bg {
+  width: 61px;
+  height: 32px;
+  background: var(--switcher-bg-color);
+  padding: 4px;
+  border-radius: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.switcher__bg:hover {
+  background: linear-gradient(to right, #3A9CD8, #55C793);
+}
+.switcher__button {
+  background-color: #fff;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+
+.card {
+  width: 340px;
+  height: 290px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-secondary-color);
+  overflow: hidden;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: var(--hover-color);
+}
+.card--facebook {
+  border-top: solid 5px #238CE1;
+}
+.card--twitter {
+  border-top: solid 5px #16A3F5;
+}
+.card--instagram {
+  border-top: solid 5px;
+  border-image: linear-gradient(to right, #F1C27D, #BD5386) 100;
+}
+.card--youtube {
+  border-top: solid 5px #BC042A;
+}
+.card__pseudo {
+  display: flex;
+  margin-bottom: 15px;
+  color: var(--font-primary-color);
+}
+.card__pseudo img {
+  margin-right: 12px;
+}
+.card__number {
+  font-size: 78px;
+  color: var(--font-primary-color);
+}
+.card__followers {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 9px;
+  margin-bottom: 14px;
+  color: var(--font-secondary-color);
+}
+.card__update {
+  display: flex;
+  align-items: center;
+}
+.card__update img {
+  margin-right: 8px;
+}
+.card__update p {
+  color: #45A98F;
+}
+
+.overview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.overview__title {
+  margin-bottom: 40px;
+}
+
+.card-overview {
+  width: 340px;
+  height: 166px;
+  border-radius: 5px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-secondary-color);
+  overflow: hidden;
+  cursor: pointer;
+}
+.card-overview:hover {
+  background-color: var(--hover-color);
+}
+.card-overview__social {
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.card-overview__text {
+  font-size: 18px;
+  color: var(--font-secondary-color);
+}
+.card-overview__numbers {
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.card-overview__number {
+  font-size: 42px;
+  color: var(--font-primary-color);
+}
+.card-overview__update {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.card-overview__update img {
+  margin-right: 3px;
+}
+.card-overview__gains {
+  color: #45A98F;
+}
+.card-overview__gains--loss {
+  color: #B14052;
+}
+
+/*# sourceMappingURL=style.css.map */

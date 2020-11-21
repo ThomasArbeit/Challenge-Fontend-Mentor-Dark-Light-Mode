@@ -1,0 +1,36 @@
+.switcher{
+    display: flex;
+    align-items: center;
+
+    &__text{
+        margin-right: 20px;
+        color: #ACB0CB;
+    }
+
+    &__bg{
+        width: 61px;
+        height: 32px;
+        background: var(--switcher-bg-color);
+
+        padding: 4px;
+        border-radius: 29px; 
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        cursor: pointer;
+
+        &:hover{
+            background: linear-gradient(to right, #3A9CD8, #55C793);
+        }
+    }
+
+    &__button{
+        background-color: #fff;
+        height: 24px;
+        width: 24px;
+
+        border-radius: 50%;
+    }
+}
